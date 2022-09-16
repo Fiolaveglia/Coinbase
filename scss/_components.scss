@@ -1,0 +1,55 @@
+@mixin btn-base {
+    padding: 0.25rem 1.5rem;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+@mixin btn-sm-modify {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+
+$color-main: #0075FF; 
+
+
+.btn-main {
+    @include btn-base();
+    background-color: $color-main;
+    color: #fff;
+    border: 1px solid $color-main;;
+    
+    &:hover{
+        background-color: #fff; 
+        color: $color-main; 
+        border: 1px solid $color-main;
+    }
+
+    &-s{
+        @extend .btn-main;
+        @include btn-sm-modify();
+    }
+}
+.btn-sec {
+    @include btn-base();
+    color: #000;
+    background-color: transparent;
+    border: none !important;
+
+    &:hover {
+        color: #888;
+    }
+    &-s {
+        @extend .btn-sec; 
+        @include btn-sm-modify();
+    }
+}
+.main-menu {
+    li {
+        font-size: 0.75rem;
+        list-style: none;
+        display: inline;
+    }
+}
