@@ -14,7 +14,6 @@
 
 $color-main: #0075FF; 
 
-
 .btn-main {
     @include btn-base();
     background-color: $color-main;
@@ -51,5 +50,61 @@ $color-main: #0075FF;
         font-size: 0.75rem;
         list-style: none;
         display: inline;
+    }
+}
+.icon-sm {
+    i {
+        font-size: 0.75rem;
+        padding: 0.1rem 0.25rem;
+        color: $color-main;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #00000040;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    .icon {
+        color: $color-main;
+        font-size: 10rem;
+        text-align: center;
+    }
+    .description {
+        .title {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .text {
+            color: #888;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    .cta {
+        color: $color-main; 
+        font-weight: 600;
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+}
+.icon-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .icon {
+        padding: 0;
+        color: $color-main;
+        font-size: 10rem;
+    }
+    .title {
+        margin-top: -2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
