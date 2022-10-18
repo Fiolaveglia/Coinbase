@@ -56,7 +56,7 @@
 }
 
 .icon-sm {
-  margin: 1rem;
+  margin: 0.5rem 1rem;
 }
 .icon-sm i {
   font-size: 1.25rem;
@@ -70,14 +70,13 @@
   -o-border-radius: 50%;
 }
 
+.icon {
+  color: #0075FF;
+  font-size: 7.5rem;
+}
+
 .feature {
   display: flex;
-  /*flex-direction: column;*/
-}
-.feature .icon {
-  color: #0075FF;
-  font-size: 10rem;
-  text-align: center;
 }
 .feature .description .title {
   text-align: center;
@@ -148,7 +147,7 @@
   font-size: 3rem;
 }
 
-.sec-features {
+.sec-features, .sec-benefits .intro {
   width: 100%;
   max-width: 992px;
   margin: auto;
@@ -157,41 +156,71 @@
   flex-direction: column;
   align-items: center;
 }
-.sec-features .intro {
+.sec-features .intro, .sec-benefits .intro .intro {
   text-align: center;
 }
-.sec-features .intro h3 {
+.sec-features .intro h3, .sec-benefits .intro .intro h3 {
   font-size: 1.8rem;
 }
-.sec-features .intro p {
+.sec-features .intro p, .sec-benefits .intro .intro p {
   font-size: 0.8rem;
   columns: #888;
 }
-.sec-features .features {
+.sec-features .features, .sec-benefits .intro .features {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.sec-features .features .text {
+.sec-features .features .text, .sec-benefits .intro .features .text {
   padding: 2rem 0;
   flex: 1;
 }
-.sec-features .features .text .features {
+.sec-features .features .text .features, .sec-benefits .intro .features .text .features {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.sec-features .features .text .features .description {
+.sec-features .features .text .features .description, .sec-benefits .intro .features .text .features .description {
   max-width: 20rem;
 }
-.sec-features .features .text .features .description .description-title {
-  font-size: 1.15rem;
+.sec-features .features .text .features .description p.description-text, .sec-benefits .intro .features .text .features .description p.description-text {
+  font-size: 0.9rem;
 }
-.sec-features .features .text .features .description .description-text {
-  font-size: 1rem;
-}
-.sec-features .features .image img {
+.sec-features .features .image img, .sec-benefits .intro .features .image img {
   max-width: 20rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #eee;
+}
+.sec-benefits .benefits-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+.sec-benefits .benefits-cards .benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec-kpis {
+  background-color: #0075FF;
+  color: #fff;
+  padding: 4rem 0;
+  width: 100%;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

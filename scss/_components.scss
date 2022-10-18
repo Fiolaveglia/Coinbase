@@ -61,7 +61,7 @@ $color-main: #0075FF;
     }
 }
 .icon-sm {
-    margin: 1rem;
+    margin: 0.5rem 1rem;
     i {
         font-size: 1.25rem;
         padding: 0.4rem 0.65rem;
@@ -74,14 +74,12 @@ $color-main: #0075FF;
         -o-border-radius: 50%;
     }
 }
+.icon {
+    color: $color-main;
+    font-size: 7.5rem;
+}
 .feature {
     display: flex;
-    /*flex-direction: column;*/
-    .icon {
-        color: $color-main;
-        font-size: 10rem;
-        text-align: center;
-    }
     .description {
         .title {
             text-align: center;
